@@ -1,0 +1,55 @@
+For designing a Car rental System should have multiple different operations that could be performed 
+
+such as managing the cars available for rent,
+processing customer requests
+handling payments 
+and maintaing a database of rentals.
+
+for the multiple different operations i will be using different patterns.
+
+1. factory Method Pattern : --->>> can be used for creating car objects like Sedan, SUV,Hatchback etc based on user request
+				You may have different types of cars with varying attributes, 
+				and the choice of car is based on the user’s preference or availability.
+
+2. The Singleton Pattern --->>  ensures that a class has only one instance and provides a global access point to it. 
+				In a car rental system, you might use this pattern for classes like RentalService or CarDatabase, 
+				where you need a single, consistent instance to manage all rentals.
+				ensuring that a single instance of the RentalService handling all car bookings, 
+				which avoids conflicts or duplication of rental transactions.
+
+3. Strategy pattern --->> 	it can be used to define various algorithms and classes for defining different type of payment methods.
+				also provide different payment strategies based on the duration, type of car and special offers on holidays.
+				If a customer rents a car for a long period, you might apply a different pricing strategy 
+				than if they rented for a short period.
+
+4. Observer Pattern -->>     	The Observer Pattern is useful for implementing a system where changes to one object (e.g., car availability) 
+				automatically notify other dependent objects. It is used for managing real-time updates.
+				ity is useful Notify customers when a specific car model becomes available, 
+				or send reminders when the rental period is about to end.
+
+
+step 1. Customer Accesses the Car Rental System
+observer pattern 
+
+
+step 2. Step 2: Customer Searches for Available Cars
+Strategy Pattern
+
+Step 3: Car Selection
+
+Factory Method Pattern
+Decorator Pattern
+
+
+step 4: payment and Notification
+Strategy pattern: to give Different payment methods and strategies based on duration, type of car etc.
+
+Singelton pattern: Ensures a single point of notification and SMS management.
+
+step 5: Car Pick-Up and Return:
+
+state pattern : handles the tranistion from different stages from Available -> Reserved-> picked up
+
+The customer arrives at the rental location, and the system checks the car’s availability.
+If the car is returned early or late, the system will calculate any penalties or refunds.
+The customer is able to return the car, and the system updates the car’s availability status accordingly.
