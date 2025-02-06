@@ -1,0 +1,36 @@
+implement a car rental System in java 
+
+where the following classes/interfaces are used 
+
+step 1: User management this is the begining of the application where the user logs in and log out 
+the class should take the user id name etc. and use a class factory of this class to classify the user into either admin 
+or customer also explain the various methods involved in customer and admin.
+
+step 2:
+once the customer has logged in a seperate class/interface should be created for searching the desired car of the user using strategy design 
+pattern. specify the various methods of the class. and the user should have an option of searching based on the rental duration, type of car,
+price of car etc.
+
+step 3:
+
+once the car is selected create another interface which specifies the type of car such as SUV,Hatchback, luxury etc.
+use a factory pattern and specify the necessary methods required for the implementation. also provide a class
+with a decorated pattern for adding services such as insurance,childseat etc. and also specify method for calculating the extra cost.
+
+step 4: 
+
+after the car has been selected specify a class for calculating the payment based on the duration,type and other 
+features of the car and also provide different payment startegies such as creditcard, UPi etc for processing the payment.
+further when the payment is processed the customer has to recieve notifications via sms and email that payment is done
+and booking is confirmed use scheduler and observer design patterns and different methods.
+
+step 5:
+
+once the payment is done customer has reserved his booking hence create a state class which provides customer to pick up 
+and return the car after use and also calculate extra cost on recieving it after the specified duration.
+
+in addition to this use state design pattern and implement the different states of the car once it has been picked up 
+it should be in picked up state once returned it should be available for another user to use.
+and also provide a maintance state where the car is unavuilable and undergoing maintenace.
+
+kindly provide comments for each method explaining the process.

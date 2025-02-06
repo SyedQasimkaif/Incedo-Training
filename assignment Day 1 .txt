@@ -1,0 +1,49 @@
+class Stack {
+	int stck[] = new int[10];
+	int tos;
+	// Initialize top-of-stack
+	Stack() {
+		tos = -1;
+	}
+	// Push an item onto the stack
+	void push(int item) {
+	if(tos==9)
+		System.out.println("Stack is full.");
+		else
+	stck[++tos] = item;
+	}
+	// Pop an item from the stack
+	int pop() {
+	if(tos < 0) {
+	System.out.println("Stack underflow.");
+	return 0;
+	}
+	else
+	return stck[tos--];
+	}
+}
+
+find the errors in this code 
+
+
+Programs to practice 
+
+
+Sum of odd numbers between 1 -100 
+Total number of odd numbers between 1 -100
+Find sum of first n numbers
+Find the sum of the digits of a number
+Java program to find Armstrong number
+Program to print Armstrong number between 1 to 1000 (done)
+Print given number in words
+Program to check the given number is Palindrome or not
+Program to print palindrome number upto N numbers (done)
+Program to print N prime numbers and find sum and average (done)
+Program to print patterns of numbers and stars (done)
+Print Floyds triangle (done)
+Print numbers in sequence way (done)
+Print numbers in triangle and pyramid vice (done)
+
+link for tutorial 
+
+https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
